@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 //var proxy = 'http://ashsproxy:8080';
 //var agent = new HttpsProxyAgent(proxy);
 
-app.get('/project/:projectId/document/:docNo', function (req, res) {
+app.get('/projects/:projectId/documents/:docNo', function (req, res) {
   var projectId = req.params['projectId'];
   var docNo = req.params['docNo'];
   var path = '/api/projects/' + projectId + '/register?search_query=docno:' + docNo;
